@@ -7,7 +7,7 @@ app = Flask(__name__)
 def hello_world():  # put application's code here
     return 'Hello World!'
 
-@app.route('/hello'):
+@app.route('/hello')
 def some_function():
     return render_template('index.html')
 
