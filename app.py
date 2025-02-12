@@ -9,7 +9,12 @@ def hello_world():  # put application's code here
 
 @app.route('/hello')
 def some_function():
-    return render_template('index.html')
+    return {
+        'name': 'Hello World',
+        'age': 25,
+        'city': 'New York',
+        'state': 'NY'
+    }
 
 
 if __name__ == '__main__':
